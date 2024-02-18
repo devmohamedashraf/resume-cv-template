@@ -3,14 +3,14 @@ import React from "react";
 export function Experience() {
     const companies = [
         {
-            "name": "Google",
+            "name": "Company Name",
             "experience": [
                 {
-                    "position": "Software Engineer",
+                    "position": "Product Designer",
                     "duration": "Jan 2020 - Present",
                 },
                 {
-                    "position": "Software Engineering Intern",
+                    "position": "Product Designer",
                     "duration": "May 2017 - Aug 2017",
                     "description": (<>
                         <li>Designed user interfaces for web and mobile applications</li>
@@ -26,10 +26,10 @@ export function Experience() {
             "logo": "/logos/google.png"
         },
         {
-            "name": "Facebook",
+            "name": "Company Name",
             "experience": [
                 {
-                    "position": "Senior Software Engineer",
+                    "position": "Product Designer",
                     "duration": "Jan 2017 - Present",
                 },
             ],
@@ -37,10 +37,10 @@ export function Experience() {
             "logo": "/logos/facebook.png"
         },
         {
-            "name": "Amazon",
+            "name": "Company Name",
             "experience": [
                 {
-                    "position": "Senior Software Development Engineer",
+                    "position": "Product Designer",
                     "duration": "Jan 2015 - Present",
                 },
             ],
@@ -54,7 +54,7 @@ export function Experience() {
                 {companies.map((company, index) => {
                     return (
                         <div key={index} className='flex flex-col gap-6'>
-                            <div className='relative flex flex-col gap-[3.5rem]'>
+                            <div className='relative flex flex-col gap-[2rem]'>
                                 {company.experience.map((experience, index) => {
                                   return (
                                       <React.Fragment key={index}>
